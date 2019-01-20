@@ -5,8 +5,6 @@
 <pre><code>
 composer require leslie/wx_token
 
-access_token; $getTicket = GetWxToken::getTicket($access); $ticket = $getTicket->ticket; $res = GetWxToken::getSignature($url,$ticket); var_dump($res); 
-
 
 use Leslie\WxToken\GetWxToken;
 require ('vendor/autoload.php');
