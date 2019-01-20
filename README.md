@@ -2,9 +2,8 @@
 ### 微信分享token
 <p>使用方法:</p>
 
-<p>composer require leslie/wx_token</p>
 <pre><code>
-access_token; $getTicket = GetWxToken::getTicket($access); $ticket = $getTicket->ticket; $res = GetWxToken::getSignature($url,$ticket); var_dump($res); 
+composer require leslie/wx_token
 
 
 use Leslie\WxToken\GetWxToken;
