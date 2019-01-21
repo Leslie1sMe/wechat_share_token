@@ -27,10 +27,10 @@ class GetWxToken
         return json_decode($data);
     }
 
-    public static function getSignature($url,$ticket)
+    public static function getSignature($noncestr,$url,$ticket)
     {
         $tmpArr = array(
-            'noncestr' => 'dasdsda12343',
+            'noncestr' => $noncestr,
             'timestamp' => time(),
             'jsapi_ticket' => $ticket,
             'url' => $url
